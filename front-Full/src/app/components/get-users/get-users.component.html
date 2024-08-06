@@ -1,0 +1,20 @@
+<h2>Users:</h2>
+<p>aki</p>
+<div class="flex" *ngIf="users && users.length">
+    <div  *ngFor="let user of users">
+        <app-card-users ></app-card-users>
+    </div>
+</div>
+
+<!-- [users]="users"  revisar conceito -->
+
+<div *ngIf="!users || users.length === 0">
+    <p>nenhum usuário.</p>
+</div>
+
+<p>condicional</p>
+<div *ngIf="ian === 'darkzinnn'">
+    <p>meu nome é: {{ian}}</p>
+
+</div>
+
